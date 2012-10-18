@@ -8,34 +8,17 @@ body{
 }
 
 #content{
-	width: 520px;
+	width: 510px;
 	height: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #fafbfb;
 	overflow: auto;
-
 }
-
 
 #banner{
-	background-color: #228cb8;
-	width: 500px;
-	height: 55px;
-	float: auto auto;
-}
-
-#headline{
-	color: white;
-	font-family: Handwriting-Dakota;
-	float:right;
-
-}
-
-ul p{
-	font-family: HelveticaLight;
-	font-size: 14px;
-	color: #0b4e7c;
+	position: absolute;
+	top: 0px;
 }
 
 p{
@@ -44,14 +27,14 @@ p{
 	display: inline-block;
 	color: #0b4e7c;
 	padding-top: 0px;
-	border: solid 0px black;
 	
 }
 
 #links{
 	border: solid 0px black;
 	padding-bottom: 30px;
-	/*text-align: center;*/
+	position: relative;
+	top: 18%;
 
 }
 
@@ -66,61 +49,59 @@ a{
 	font-size: 14px;
 	display: inline-block;
 	color: #0b4e7c;
-	padding: 15px 20px;
 	text-decoration: none;
 }
 
-#banner a{
-	text-decoration: none;
-	display: block;
-}
 
 #links a{
-	position: absolute;
+	position: relative;
 	font-family: HelveticaLight;
 	font-size: 14px;
-	display: inline-block;
 	color: #0b4e7c;
-	padding: 15px 20px;
 	text-decoration: none;
 }
 
 a:hover{
 	font-family: HelveticaLight;
 	font-size: 14px;
-	display: inline-block;
 	color: #0b4e7c;
 	text-shadow: 0.1em 0.1em 0.05em #333;
-	
 }
 
-.analyze{
-	width: 275px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
+.interests {
+	position: relative;
+	left: 100px;
+	display: inline-table;
+/*	border: 1px solid black;	*/
+
+
 }
 
-.design{
-	width: 275px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
+.interests p{
+	position: relative;
+	bottom: 20px;
+	padding-left: 20px;
+
 }
 
-.inspire{
-	width: 275px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
+.interests img{
+	padding: 0px 2px 0px 2px;
 }
+
+.interests img:hover{
+	opacity: 0.5;
+}
+
+
+.icons {
+	margin: 0px 2px 0px 2px;
+}
+
 
 #quote {
 	text-align: center;
-	padding-bottom: 15px;	
+	position: relative;
+	top: 23%;	
 }
 
 #quote p{
@@ -131,8 +112,21 @@ a:hover{
 
 #contact {
 	text-align: center;
+	position: relative;
+	top: 28%;
 }
 
 #contact a{
 	position: relative;
+}
+
+#datagraph {
+	position: absolute;
+	bottom: 0px;
+}	
+
+p.class{
+	position: relative;
+	right: 0px;
+	top: 0px;
 }

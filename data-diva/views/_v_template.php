@@ -6,6 +6,21 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
 	<link rel="stylesheet" type="text/css" href="../style.css" />
 
+<script type="text/javascript">
+
+<link media="screen" rel="stylesheet" href="colorbox.css" />
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="jquery.colorbox-min.js" type="text/javascript"></script>
+ 
+<script type="text/javascript">
+    $(function()
+    {
+        $('#link_content').colorbox({opacity:0.3});
+    });
+</script>
+
+
+
 </head>
 
 <body>	
@@ -15,8 +30,17 @@
 			<div id="banner">
 				<a href="index"><img src="images/logo2.jpg"></a>
 			</div>
+						
+			
+			
+			
 			
 				<?=$content;?> 
+			
+			
+			
+			
+			
 			
 			<div id="contact">
 				<a href="resume.pdf">

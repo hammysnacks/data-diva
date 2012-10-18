@@ -75,15 +75,15 @@ a:hover{
 }
 
 .analyze{
-
+	border: 1px solid black;
 }
 
 .design{
-	
+	border: 1px solid black;	
 }
 
 .inspire{
-	
+	border: 1px solid black;
 }
 
 #quote{

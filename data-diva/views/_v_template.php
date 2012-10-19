@@ -4,21 +4,36 @@
 	<title>The Data Diva</title>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+	
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
+	
+	<!-- Load CSS files -->
 	<link rel="stylesheet" type="text/css" href="../style.css" />
 
-<script type="text/javascript">
+		<link rel="stylesheet" href="/colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="../colorbox/jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Fadeins-images only
+				$(".healthsouk").colorbox({rel:'healthsouk', transition:"fade"});
+				$(".teny").colorbox({rel:'teny', transition:"fade"});
+				$(".volume").colorbox({rel:'volume', transition:"fade"});
+				
+				//Inlines-text
+				$(".vba").colorbox({inline:true, width:"50%"});
+				$(".ted").colorbox({inline:true, width:"50%"});
+				$(".blogs").colorbox({inline:true, width:"50%"});
 
-<link media="screen" rel="stylesheet" href="colorbox.css" />
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="jquery.colorbox-min.js" type="text/javascript"></script>
- 
-<script type="text/javascript">
-    $(function()
-    {
-        $('#link_content').colorbox({opacity:0.3});
-    });
-</script>
-
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+    	    
 
 
 </head>
@@ -28,7 +43,7 @@
 		<div id="content">
 			
 			<div id="banner">
-				<a href="index"><img src="images/logo2.jpg"></a>
+				<a href="index"><img src="/images/logo2.jpg"></a>
 			</div>
 						
 			
@@ -54,8 +69,10 @@
 			
 			</div>
 			
-			
 		</div>
+		
+
+
 
 </body>
 </html>

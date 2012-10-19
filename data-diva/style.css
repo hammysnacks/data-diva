@@ -86,17 +86,18 @@ a:hover{
 
 .interests img{
 	padding: 0px 2px 0px 2px;
+	opacity: 0.5;
+	display: inline-table;
 }
 
 .interests img:hover{
-	opacity: 0.5;
+	opacity: 1.0;
 }
 
 
 .icons {
 	margin: 0px 2px 0px 2px;
 }
-
 
 #quote {
 	text-align: center;
